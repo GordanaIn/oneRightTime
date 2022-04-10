@@ -1,27 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactEcharts from "echarts-for-react";
 
-function BarChartMobile(){
+function BarGraphMobile(){
 
-    //style for Graph
-    const emphasisStyle = {
-        itemStyle: {
-            title: {
-
-                marginTop: '-10%',
-                textAlign:'center'
-            },
-            shadowColor: 'rgba(231,7,7,0.6)'
-        }
-    };
     // all option in Graph
     const option = {
         //title of Graph
         title: {
-            text: '1.2 Graph two: predicted investments',
-           // emphasis: emphasisStyle,
+            text: '1.2 Graph two:predicted investments',
+           margin:0,
 
-            top:'-1%'
+
         },
         // legend of colors in Graph
         legend: {
@@ -91,4 +80,4 @@ function BarChartMobile(){
     return<ReactEcharts option={option} />;
 
 }
-export default BarChartMobile;
+export default BarGraphMobile;
